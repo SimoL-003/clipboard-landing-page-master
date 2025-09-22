@@ -9,6 +9,15 @@
     --light-gray: hsl(201, 11%, 66%)
 }
 
+/* UTILITIES */
+.container {
+    max-width: 750px;
+}
+
+img {
+    max-width: 100%;
+}
+
 /* TYPOGRAPHY */
 
 body {
@@ -75,6 +84,10 @@ h1 {
     flex-direction: column;
 }
 
+.functions .text {
+    text-align: center;
+}
+
 /* RESPONSIVE */
 @media only screen and (min-width:576px) {
     .hero {
@@ -87,5 +100,9 @@ h1 {
         flex-direction: row;
         justify-content: center;
         gap: 20px;
+    }
+
+    .functions .img-text {
+        display: flex;
     }
 }
