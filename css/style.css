@@ -110,10 +110,6 @@ p {
         justify-content: center;
         gap: 20px;
     }
-
-    .functions .img-text {
-        display: flex;
-    }
 }
 
 @media only screen and (min-width:768px) {
@@ -133,5 +129,9 @@ p {
     .functions .text {
         text-align: start;
         padding: 60px 80px;
+    }
+
+    .multi-device {
+        padding-top: 3%;
     }
 }
