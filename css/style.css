@@ -6,7 +6,10 @@
 
     /* neutral colors */
     --dark-gray: hsl(210, 10%, 33%);
-    --light-gray: hsl(201, 11%, 66%)
+    --light-gray: hsl(201, 11%, 66%);
+
+    /* backgrounds */
+    --bg-gray: rgb(245, 246, 248);
 }
 
 /* UTILITIES */
@@ -17,6 +20,16 @@
 
 img {
     max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 /* TYPOGRAPHY */
@@ -113,6 +126,28 @@ p {
     margin-bottom: 40px;
 }
 
+footer {
+    background-color: var(--bg-gray);
+}
+
+footer .links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+}
+
+footer .logo img {
+    width: 65px;
+}
+
+footer .social {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    gap: 40px;
+}
+
 /* RESPONSIVE */
 @media only screen and (min-width:576px) {
     .hero {
@@ -154,5 +189,22 @@ p {
 
     .multi-device {
         padding-top: 3%;
+    }
+
+
+    footer .links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: start;
+    }
+
+    footer .links a {
+        display: inline-block;
+        width: 170px;
+    }
+
+    footer .social {
+        gap: 15px;
+        padding-top: 0;
     }
 }
