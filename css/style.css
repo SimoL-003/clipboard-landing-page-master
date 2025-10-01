@@ -93,7 +93,8 @@ p {
     background-position: top
 }
 
-.hero .btn-div {
+.hero .btn-div,
+.download .btn-div {
     display: flex;
     flex-direction: column;
 }
@@ -120,7 +121,8 @@ p {
         background-repeat: no-repeat;
     }
 
-    .hero .btn-div {
+    .hero .btn-div,
+    .download .btn-div {
         flex-direction: row;
         justify-content: center;
         gap: 20px;
